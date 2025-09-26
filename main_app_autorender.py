@@ -27,7 +27,7 @@ LEFT_FRAC = 0.30   # soldaki sütun oranı
 MARGIN_ROWS = 1    # alt status satırı rezervi
 
 # <-- Burayı değiştirerek kutu boyutunu kontrol et:
-BOX_PIXELS = 48    # önerilen: 12..48 arası dene. Her pixel => '██' olduğu için yatayda 2*BOX_PIXELS karakter kullanılır.
+BOX_PIXELS = 24    # önerilen: 12..48 arası dene. Her pixel => '██' olduğu için yatayda 2*BOX_PIXELS karakter kullanılır.
 # -----------------------
 
 class CanvasWidget(Static):
