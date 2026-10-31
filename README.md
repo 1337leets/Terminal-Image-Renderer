@@ -36,7 +36,7 @@ The input box on the left is a leftover from the game idea and does not do anyth
 
 ## Standalone Scripts
 
-`standalone/` holds three earlier scripts I wrote on my phone. They use the same `██` pixels but need only Pillow, not Textual, and they write straight to the terminal.
+The project started on my phone in Termux and later moved to a PC, with PowerShell and kitty. `standalone/` holds three scripts from that time. They use the same `██` pixels but need only Pillow, not Textual, and they write straight to the terminal.
 
 | File | Content |
 |------|---------|
