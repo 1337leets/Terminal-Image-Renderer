@@ -34,6 +34,22 @@ python run_with_small_font_ps.py terminal_image_viewer.py
 
 The input box on the left is a leftover from the game idea and does not do anything yet.
 
+## Standalone Scripts
+
+`standalone/` holds three earlier scripts I wrote on my phone. They use the same `██` pixels but need only Pillow, not Textual, and they write straight to the terminal.
+
+| File | Content |
+|------|---------|
+| `render_image.py` | Clears the screen and draws an image at a chosen width and height, with `--no-color` for black and white |
+| `render_topright.py` | Draws a small image in the top right corner of the current terminal without redrawing the rest |
+| `launch_kitty.py` | Opens a kitty window with a chosen font size and runs `render_image.py` in it, which needs kitty |
+
+```
+python standalone/render_image.py assets/ss.jpg --width 40
+python standalone/render_topright.py assets/ss.jpg --box-px-w 32 --box-px-h 32
+python standalone/launch_kitty.py assets/ss.jpg --font-size 6
+```
+
 ## License
 
 MIT
