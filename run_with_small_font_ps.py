@@ -7,7 +7,7 @@ if os.name != "nt":
     sys.exit(1)
 
 if len(sys.argv) < 2:
-    print("Usage: python run_with_small_font_ps.py main_app_autorender.py [--face Consolas] [--size 1]")
+    print("Usage: python run_with_small_font_ps.py terminal_image_viewer.py [--face Consolas] [--size 1]")
     sys.exit(1)
 
 face = "Consolas"

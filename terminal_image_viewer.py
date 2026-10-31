@@ -1,4 +1,4 @@
-# main_app_autorender.py
+# terminal_image_viewer.py
 import os
 import shutil
 import asyncio
@@ -23,11 +23,11 @@ from rich.text import Text
 from pixel_renderer import PixelCanvas, image_to_canvas_contain, image_to_canvas_exact, MAX_PIXEL_BOX
 
 ASSETS_IMAGE = os.path.join("assets", "ss.jpg")
-LEFT_FRAC = 0.30   # soldaki sütun oranı
-MARGIN_ROWS = 1    # alt status satırı rezervi
+LEFT_FRAC = 0.30   # width of the left column
+MARGIN_ROWS = 1    # row reserved for the status bar
 
-# <-- Burayı değiştirerek kutu boyutunu kontrol et:
-BOX_PIXELS = 24    # önerilen: 12..48 arası dene. Her pixel => '██' olduğu için yatayda 2*BOX_PIXELS karakter kullanılır.
+# <-- Change this to control the size of the image box:
+BOX_PIXELS = 24    # try 12..48. Each pixel is '██', so the image takes 2*BOX_PIXELS columns.
 # -----------------------
 
 class CanvasWidget(Static):

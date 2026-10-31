@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 from rich.text import Text
 
 BG_COLOR = (0,0,0)
-MAX_PIXEL_BOX = 256   # yüksek denemeler için; ihtiyaca göre düşür
+MAX_PIXEL_BOX = 256   # for high-resolution experiments, lower it as needed
 
 class PixelCanvas:
     def __init__(self, w:int, h:int, bg:Tuple[int,int,int]=BG_COLOR):
